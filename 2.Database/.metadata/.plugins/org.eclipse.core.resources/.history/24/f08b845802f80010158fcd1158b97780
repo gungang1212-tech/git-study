@@ -1,0 +1,22 @@
+SELECT * FROM employees
+ORDER BY birth_date ;
+
+SELECT * FROM titles 
+ORDER BY to_date DESC;
+
+SELECT MAX(salary) FROM salaries;
+SELECT min(salary) AS '부자' FROM salaries ;
+SELECT avg(salary) FROM salaries ;
+SELECT sum(salary) FROM salaries ;
+SELECT COUNT(*) FROM SALARIES;
+
+SELECT COUNT(*) AS '직원 수' FROM EMPLOYEES;
+
+SELECT count(*) AS '엔지니어 수'FROM TITLES
+WHERE title = 'Engineer';
+
+SELECT count(*) AS '1965년 이후' FROM employees
+WHERE hire_date >= '1965-01-01';
+
+SELECT MAX(emp_no) AS '가장 큰거', min(emp_no) AS '가장 작은거' FROM employees;
+

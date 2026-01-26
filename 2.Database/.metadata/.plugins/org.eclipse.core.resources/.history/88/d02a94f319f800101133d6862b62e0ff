@@ -1,0 +1,20 @@
+SELECT * FROM employees
+ORDER BY emp_no;
+
+SELECT * FROM employees
+ORDER BY emp_no DESC;
+
+SELECT * FROM salaries
+ORDER BY salary DESC;
+
+SELECT * FROM employees
+ORDER BY hire_date;
+
+SELECT * FROM employees
+ORDER BY gender ASC, emp_no ASC;
+
+SELECT MAX(salary) FROM salaries;
+
+SELECT min(salary) FROM salaries;
+
+SELECT avg(salary) FROM salaries;

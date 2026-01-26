@@ -1,0 +1,15 @@
+SELECT * FROM employees
+ORDER BY emp_no;
+
+SELECT * FROM employees
+ORDER BY emp_no DESC;
+
+SELECT * FROM salaries
+ORDER BY salary DESC;
+
+SELECT * FROM employees
+ORDER BY hire_date;
+
+SELECT * FROM employees
+ORDER BY gender ASC
+ORDER BY emp_no ASC;

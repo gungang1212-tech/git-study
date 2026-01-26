@@ -1,0 +1,3 @@
+SELECT emp_no
+FROM salaries
+GROUP BY emp_no;

@@ -1,0 +1,8 @@
+SELECT * FROM employees
+ORDER BY emp_no;
+
+SELECT * FROM employees
+ORDER BY emp_no DESC;
+
+SELECT * FROM salaries
+ORDER BY salary desc;

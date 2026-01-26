@@ -1,0 +1,5 @@
+
+SELECT emp_no, dept_no, from_date FROM dept_emp
+WHERE (emp_no, FROM_date) IN(SELECT emp_no, min(from_date) 
+						FROM dept_emp
+						GROUP BY emp_no);

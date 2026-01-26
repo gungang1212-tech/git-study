@@ -1,0 +1,22 @@
+CREATE table db_tcl (
+	id varchar(50) 
+	);
+INSERT INTO db_tcl values('test1');
+INSERT into db_tcl values('test2');
+INSERT INTO db_tcl values('test3');
+
+SELECT * FROM db_tcl;
+COMMIT;
+
+UPDATE db_tcl
+SET id = 'test4';
+
+SELECT * FROM db_tcl;
+ROLLBACK;
+SELECT * FROM db_tcl;
+
+
+SELECT * FROM employees;
+
+SELECT emp_no FROM employees
+WHERE emp_no BETWEEN 10010 AND 10020;

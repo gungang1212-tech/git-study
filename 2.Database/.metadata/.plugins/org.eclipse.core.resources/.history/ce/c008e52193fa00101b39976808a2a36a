@@ -1,0 +1,5 @@
+SELECT emp_no ,
+FROM salaries s 
+GROUP BY emp_no;
+
+SELECT * FROM salries;

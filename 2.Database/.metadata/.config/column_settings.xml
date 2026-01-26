@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items>
+	<item id="NodeList/DBNProjectDatabases/DBNBookmarkFolder/DBNDashboardFolder/DBNDiagramFolder/DBNResource">
+		<column name="이름" visible="true" order="0" width="100"/>
+		<column name="경로" visible="true" order="1" width="135"/>
+		<column name="크기" visible="true" order="2" width="100"/>
+		<column name="최종 수정" visible="true" order="3" width="100"/>
+	</item>
+	<item id="NodeList/DataSourceDescriptor">
+		<column name="이름" visible="true" order="0" width="100"/>
+		<column name="설명" visible="true" order="1" width="100"/>
+		<column name="Origin" visible="true" order="2" width="100"/>
+		<column name="드라이버 유형" visible="true" order="3" width="100"/>
+	</item>
 	<item id="NodeList/MySQLCatalog">
 		<column name="Database Name" visible="true" order="0" width="100"/>
 		<column name="Default Charset" visible="true" order="1" width="100"/>
@@ -23,21 +35,21 @@
 		<column name="Database size" visible="true" order="4" width="100"/>
 	</item>
 	<item id="Suggestion/NodeList/MySQLTableColumn">
-		<column name="컬럼명" visible="true" order="0" width="110"/>
-		<column name="#" visible="true" order="1" width="56"/>
-		<column name="Data Type" visible="true" order="2" width="114"/>
+		<column name="컬럼명" visible="true" order="0" width="114"/>
+		<column name="#" visible="true" order="1" width="61"/>
+		<column name="Data Type" visible="true" order="2" width="102"/>
 		<column name="Not Null" visible="false" order="3" width="100"/>
 		<column name="Auto Increment" visible="false" order="4" width="100"/>
 		<column name="Key" visible="false" order="5" width="100"/>
 		<column name="디폴트" visible="false" order="6" width="100"/>
 		<column name="Extra" visible="false" order="7" width="100"/>
 		<column name="Expression" visible="false" order="8" width="100"/>
-		<column name="Comment" visible="true" order="3" width="97"/>
+		<column name="Comment" visible="true" order="3" width="102"/>
 	</item>
 	<item id="scriptSelectorViewer">
-		<column name="Script" visible="true" order="0" width="197"/>
-		<column name="Time" visible="true" order="1" width="178"/>
-		<column name="Info" visible="true" order="2" width="63"/>
-		<column name="Folder" visible="true" order="3" width="75"/>
+		<column name="Script" visible="true" order="0" width="192"/>
+		<column name="Time" visible="true" order="1" width="173"/>
+		<column name="Info" visible="true" order="2" width="58"/>
+		<column name="Folder" visible="true" order="3" width="70"/>
 	</item>
 </items>

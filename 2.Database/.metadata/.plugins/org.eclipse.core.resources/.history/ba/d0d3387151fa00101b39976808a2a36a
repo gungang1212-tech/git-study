@@ -1,0 +1,11 @@
+SELECT emp_no, title, to_date
+FROM titles
+where(emp_no, to_date ) IN (SELECT emp_no, max(to_date)
+					   FROM titles 
+					   GROUP BY emp_no);
+
+SELECT emp_no, salary, to_date
+FROM salaries
+WHERE (emp_no, to_date) IN (emp_no, MAX(to_date)
+					    FROM salaries
+					    GROUP BY emp_no);

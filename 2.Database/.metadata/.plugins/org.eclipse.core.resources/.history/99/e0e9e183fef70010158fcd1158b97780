@@ -1,0 +1,78 @@
+USE employees;
+
+SELECT * FROM salaries;
+
+
+-- 1번
+SELECT salary + 1000 FROM salaries;
+-- 2번 소수점 제거하기?
+SELECT salary * 0.9 FROM salaries;
+-- 3번
+SELECT salary / 12 FROM salaries;
+-- 4번
+SELECT DISTINCT gender FROM employees;
+-- 5번
+SELECT DISTINCT title FROM titles;
+-- 6번
+SELECT emp_no, first_name FROM employees
+WHERE emp_no = 10006;
+
+-- 7번
+SELECT emp_no, salary FROM salaries 
+WHERE salary >= 60000;
+
+-- 8번
+SELECT first_name, hire_date FROM employees
+WHERE hire_date > '1995-12-31';
+
+-- 9번
+SELECT emp_no, first_name, gender FROM employees
+WHERE gender = 'F';
+
+--  10번 다시보기
+SELECT emp_no, dept_no FROM dept_emp;
+WHERE dept_no = 'd005';
+-- 11번
+SELECT emp_no, salary 
+FROM salaries
+WHERE salary BETWEEN 60000 and 80000;
+-- 12번
+SELECT last_name, gender, hire_date FROM employees
+WHERE gender = 'M' OR hire_date < '1990-01-01'
+-- 14번
+
+SELECT emp_no, dept_no, to_date FROM dept_emp
+WHERE dept_no = 'd001' AND to_date = '9999-01-01';
+
+-- 15번 다시보기
+
+SELECT emp_no, salary FROM salaries s 
+WHERE salary IN (salary < 40000, salary >100000);
+
+-- 16번
+
+SELECT first_name, gender, hire_date FROM employees
+WHERE gender ='F' AND hire_date >= '1996-01-01';
+
+-- 17번
+
+SELECT emp_no, salary lary FROM salaries
+WHERE salary BETWEEN 50000 AND 70000;
+
+-- 18번
+
+SELECT emp_no, from_date  FROM salaries
+WHERE from_date BETWEEN '1990-01-01' AND '1995-01-01';
+
+-- 19번
+
+SELECT emp_no, first_name FROM employees
+WHERE emp_no BETWEEN 10010 AND 10020;
+
+-- 20번
+
+SELECT emp_no , salary FROM salaries
+WHERE salary >= 80000 AND salary <= 100000;
+
+
+

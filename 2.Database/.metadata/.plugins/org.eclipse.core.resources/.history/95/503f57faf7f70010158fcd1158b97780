@@ -1,0 +1,16 @@
+USE employees;
+
+SELECT * FROM salaries;
+
+
+-- 1번
+SELECT salary + 1000 FROM salaries;
+-- 2번 소수점 제거하기?
+SELECT salary * 0.9 FROM salaries;
+-- 3번
+SELECT salary / 12 FROM salaries;
+-- 4번
+SELECT DISTINCT gender FROM employees;
+-- 5번
+SELECT emp_no, first_name FROM employees;
+WHERE emp_no = 10006;

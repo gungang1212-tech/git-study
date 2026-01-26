@@ -1,0 +1,49 @@
+-- 사번 -> 열, 급여 -> 열 조회하기. 함께 조회
+
+SELECT * FROM employees;
+SELECT * FROM salaries;
+SELECT * FROM dept_emp;
+-- 1번
+
+SELECT A.emp_no, B.salary 
+FROM employees AS A
+LEFT JOIN salaries AS B ON B.salary;
+
+
+-- 2번
+-- 	사원 한명에 대한,
+-- 	- 사번
+-- 	- 이름
+-- 	- 부서정보	
+-- //emp_no, first_name -> employees
+SELECT * FROM employees;
+-- dept_name -> dept_emp
+SELECT * FROM dept_emp;
+
+
+SELECT a.emp_no, a.first_name, B.dept_no
+FROM employees AS A
+JOIN dept_emp AS B ON A.emp_no = B.emp_no;
+
+SELECT * FROM employees;
+
+-- 3번
+	SELECT * FROM departments; 		C 테이블
+
+
+	SELECT A.first_name ,B.dept_no, B.to_date
+	FROM employees AS A
+	JOIN dept_emp AS B ON A.emp_no = B.emp_no
+	WHERE B.to_date = '9999-01-01';									D 테이블
+
+-- 이름에 대한 사원번호를 가져왔다.
+-- C 테이블의 부서명과, D 테이블의 이름을 출력한다.(합치기)
+-- -> 부서번호가 같은 값에 대해 하나의 테이블로 합친다.
+
+SELECT D.first_name, C.dept_name
+	FROM 
+	(SELECT A.first_name, B.dept_no
+	FROM employees AS A
+	JOIN dept_emp AS B ON A.emp_no = B.emp_no) D
+	JOIN departments C ON D.dept_no = C.dept_no
+	

@@ -1,0 +1,56 @@
+SELECT * FROM employees
+ORDER BY emp_no;
+
+SELECT * FROM employees
+ORDER BY emp_no DESC;
+
+SELECT * FROM salaries
+ORDER BY salary DESC;
+
+SELECT * FROM employees
+ORDER BY hire_date;
+
+SELECT * FROM employees
+ORDER BY gender ASC, emp_no ASC;
+
+SELECT MAX(salary) FROM salaries;
+
+SELECT min(salary) FROM salaries;
+
+SELECT avg(salary) FROM salaries;
+
+SELECT sum(salary) FROM salaries;
+-- 10
+SELECT count(*) FROM employees
+WHERE emp_no;
+
+-- 11
+SELECT count(*), gender FROM employees
+GROUP BY gender 
+
+-- 12
+
+
+SELECT count(*) AS '사원 수', dept_no FROM dept_emp
+GROUP BY dept_no;
+
+-- 13
+
+SELECT count(*), title FROM titles
+GROUP BY title;
+
+-- 14
+
+
+-- 17
+
+SELECT dept_no  AS '부서명', count(*) AS '사원 수' FROM dept_emp
+GROUP BY dept_no 
+HAVING count(emp_no) >= 20000;
+-- 18
+SELECT title AS '직급', count(*) AS '사원 수' FROM titles
+GROUP BY title 
+HAVING count(emp_no) >= 50000;
+
+SELECT * FROM salaries;
+

@@ -1,0 +1,35 @@
+-- 사번 -> 열, 급여 -> 열 조회하기. 함께 조회
+
+SELECT * FROM employees;
+SELECT * FROM salaries;
+
+-- 1번
+
+SELECT A.emp_no, B.salary 
+FROM employees AS A
+LEFT JOIN salaries AS B ON B.salary;
+
+
+-- 2번
+-- 	사원 한명에 대한,
+-- 	- 사번
+-- 	- 이름
+-- 	- 부서정보	
+-- //emp_no, first_name -> employees
+SELECT * FROM employees;
+-- dept_name -> dept_emp
+SELECT * FROM dept_emp;
+SELECT a.emp_no, a.first_name, B.dept_no
+FROM employees AS A
+JOIN dept_emp AS B ON A.emp_no = B.emp_no;
+
+SELECT * FROM employees;
+
+-- 3번
+
+-- 사원 한명에 대한,
+-- 이름, 부서 조회하기 / 조건 : 현재 재직중
+
+SELECT * FROM departments;
+SELECT * FROM employees
+

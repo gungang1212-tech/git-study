@@ -1,0 +1,44 @@
+-- 사번 -> 열, 급여 -> 열 조회하기. 함께 조회
+
+SELECT * FROM employees;
+SELECT * FROM salaries;
+
+-- 1번
+
+SELECT A.emp_no, B.salary 
+FROM employees AS A
+LEFT JOIN salaries AS B ON B.salary;
+
+
+-- 2번
+-- 	사원 한명에 대한,
+-- 	- 사번
+-- 	- 이름
+-- 	- 부서정보	
+-- //emp_no, first_name -> employees
+SELECT * FROM employees;
+-- dept_name -> dept_emp
+SELECT * FROM dept_emp;
+SELECT a.emp_no, a.first_name, B.dept_no
+FROM employees AS A
+JOIN dept_emp AS B ON A.emp_no = B.emp_no;
+
+SELECT * FROM employees;
+
+-- 3번
+
+-- 사원 한명에 대한,
+-- 이름, 부서 조회하기 / 조건 : 현재 재직중
+SELECT * FROM dept_emp;
+SELECT * FROM departments;
+-- // departments 테이블 -> 부서명
+SELECT * FROM employees; 
+-- employees 테이블 -> 이름
+
+-- 각각의 부서번호에 따라 부서명이 있다. / 사원 번호 하나 당, 부서명 하나를 가진다.
+
+-- employees 테이블의 사원번호와 , dept_emp 테이블의 사원번호를 비교해서 같은 값에 해당하는 dept_no를 가져오기
+
+SELECT A.emp_no , B.dept_no
+FROM employees AS A 
+JOIN dept_emp AS B ON A.emp_no = B.emp_no

@@ -1,0 +1,2 @@
+
+SELECT emp_no, dept_no, from_date FROM dept_emp;

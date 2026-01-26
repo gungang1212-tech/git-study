@@ -1,0 +1,6 @@
+SELECT * FROM salaries;
+
+SELECT emp_no ,
+	  sum(salary) AS emp_no_total
+	  FROM salaries
+GROUP BY emp_no
