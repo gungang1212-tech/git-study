@@ -32,15 +32,7 @@ JOIN departments d ON de.dept_no = d.dept_no ;
 
 
 
-create table position2(
- id int PRIMARY KEY AUTO_INCREMENT,
- position_name varchar(50)
-);
 
-INSERT INTO position2 VALUES('a');
-INSERT INTO position2(position_name) VALUES(NULL,'a');
-SELECT * FROM position2;
-DROP TABLE position2;
 
 
 

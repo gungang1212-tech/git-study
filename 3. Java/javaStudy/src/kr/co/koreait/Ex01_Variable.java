@@ -98,7 +98,7 @@ public class Ex01_Variable {
 		//  - 범위가 큰 자료형 -> 범위가 작은 자료형
 		//  - 주의 : 큰 자료형에서 작은 자료형으로 변환하기 때문에 데이터 손실 발생할 수 있음
 		long lNumber = 10000000000L;
-		int iNumber = (int)lNumber; // 8byte를 강제로 4byte로 변경
+		int iNumber = (int) lNumber; // 8byte를 강제로 4byte로 변경
 		System.out.println(iNumber);
 		
 		// ----------------------------------------------
@@ -133,7 +133,7 @@ public class Ex01_Variable {
 		//  2. \t : 탭
 		//  3. \b : 백스페이스
 		//  3. \문자 : 특수 문자를 일반 문자열로 인식해야할 때 사용
-		System.out.println("\"Hello, World!\"");
+		System.out.println("\"Hello, World! \n");
 		System.out.printf("개행 문자는 \\n 입니다.");
 		
 		// --------------------------------------------------------------
