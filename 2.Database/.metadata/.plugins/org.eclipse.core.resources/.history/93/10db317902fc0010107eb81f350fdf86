@@ -1,0 +1,6 @@
+SELECT * FROM employees;
+SELECT * FROM salaries;
+
+SELECT B.emp_no, A.salary
+FROM employees AS B
+JOIN salaries AS A ON A.emp_no = B.emp_no;
