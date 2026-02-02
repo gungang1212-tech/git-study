@@ -15,6 +15,7 @@ public class Ex18_2_Person {
 		this.phone = "01001001";
 	}
 	
+	
 	Ex18_2_Person(String inputName,String inputAddress, int inputAge,String inputPhone) {
 		
 		
