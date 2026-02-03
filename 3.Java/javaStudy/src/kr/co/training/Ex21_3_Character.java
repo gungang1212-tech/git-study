@@ -1,0 +1,31 @@
+package kr.co.training;
+
+public class Ex21_3_Character {
+	// walk 메서드
+	//	- "캐릭터가 한걸음 걷습니다 " 출력
+	
+	// stop 메서드
+	//	- "캐릭터가 멈춥니다." 출력
+	
+	// attack 메서드
+	//	- "주먹으로 공격합니다." 출력
+	
+	// skill 메서드
+	//	- "공통 스킬을 사용합니다." 출력
+	
+	public void walk(Ex21_3_CharacterAbiltiy ca) {
+		System.out.println("캐릭터가 한걸음 걷습니다.");
+	}
+	
+	public void stop(Ex21_3_CharacterAbiltiy ca) {
+		System.out.println("캐릭터가 멈춥니다.");
+	}
+	
+	public void attack(Ex21_3_CharacterAbiltiy ca) {
+		System.out.println("주먹으로 공격합니다.");
+	}
+	
+	public void skill(Ex21_3_CharacterAbiltiy ca) {
+		System.out.println("공통 스킬을 사용합니다.");
+	}
+}

@@ -1,4 +1,6 @@
-package kr.co.koreait;
+package kr.co.training;
+
+import kr.co.koreait.Ex21_1_Child;
 
 public class Ex21_Main {
 	public static void main(String[] args) {
@@ -12,9 +14,21 @@ public class Ex21_Main {
 		//	- 부모 클래스의 생성자를 호출
 		//	- 첫 줄에 다른 생성자를 호출하는 부분이 없다면 컴파일러가 super() 자동 삽입
 		//		> this() 등이 없다면
-		Ex21_1_Child child = new Ex21_1_Child();
-		child.name = "홍길동";
-		child.info();
-		child.childInfo();
+//		Ex21_1_Child child = new Ex21_1_Child();
+//		child.name = "홍길동";
+//		child.info();
+//		child.childInfo();
+		
+		
+		
+		
+		// Ex21번 문제 	----------
+		
+		Ex21_1_Order ex = new Ex21_1_Order("100", "결제완료", 120.2f);
+		System.out.println(ex.order());
+		Ex21_2_Warlord camille = new Ex21_2_Warlord(50, 25, 1000, 6);
+		
+		camille.attack();
+		camille.levelUp();
 	}
 }
