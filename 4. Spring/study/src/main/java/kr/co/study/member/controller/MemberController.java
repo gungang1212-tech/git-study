@@ -68,6 +68,7 @@ public class MemberController {
 	@PostMapping("/login")
 	public String login(ReqLoginDTO request,
 						HttpSession session) {
+		System.out.println();
 		ResLoginDTO response = memberService.login(request);
 		
 		// 로그인 실패할 경우 회원가입 페이지로 이동

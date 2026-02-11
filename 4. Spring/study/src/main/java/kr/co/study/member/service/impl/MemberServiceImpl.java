@@ -51,15 +51,15 @@ public class MemberServiceImpl implements MemberService {
 		// 6. DB 저장
 		memberRepository.save(member);
 	}
-	
+	 
 	@Override
-	public ResLoginDTO login(ReqLoginDTO request) {
+	public ResLoginDTO login(ReqLoginDTO request) { 
 		// 1. 해당 아디를 가진 유저가 있는 조회
 		//	 - 존재한다면 해당 정보(SELECT된 결과)를 엔티티에 저장
 		Member member = memberRepository.findByUserId(request.getUserId());
 
 		// 2. 존재하지 않으면 null 반환
-		if(member == null) {
+		if(member == null) { 
 			return null;
 		}
 		
